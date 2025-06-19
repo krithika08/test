@@ -1,17 +1,18 @@
-def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, n):
-        if n % i == 0:
-            return False
-    return True
+# buggy_script.py
 
-def get_primes_up_to(limit):
-    primes = []
-    for num in range(2, limit + 1)
-        if is_prime(num):
-            primes.append(num)
-    return primes
+def divide(a, b):
+    return a / b
+
+def say_hello(name)
+    print("Hello, " + name)
+
+def process_list(items):
+    total = 0
+    for item in items:
+        total += item
+    return total / len(item)  # should be len(items)
 
 if __name__ == "__main__":
-    print("Primes up to 10:", get_primes_up_to(10))
+    say_hello("Krithika")
+    print("Result of division:", divide(10, 0))  # ZeroDivisionError
+    print("Processed list average:", process_list([1, 2, 3, 4]))
