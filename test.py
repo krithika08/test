@@ -1,9 +1,6 @@
-def add(a, b):
-    return a + b
-
-def divide(a, b):
-    return a / b  # ⚠️ will raise ZeroDivisionError if b = 0
-
-if __name__ == "__main__":
-    print("Add: ", add(2, 3))
-    print("Divide: ", divide(4, 2))
+def get_primes_up_to(limit):
+    primes = []
+    for num in range(2, limit + 1):
+        if is_prime(num):
+            primes.append(num)
+    return primes
